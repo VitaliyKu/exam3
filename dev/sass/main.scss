@@ -1,0 +1,227 @@
+@import "fonts/fonts";
+@import "helpers/variables";
+
+body{
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	color: $font-color;
+}
+
+a, button{
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+// Captions/Descriptions
+
+.font-caption{
+	font-family: "Proxima Nova";
+	font-size: 36px;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+}
+
+.our-service-caption{
+	font-family: 'PT Sans';
+	font-size: 24px;
+	color: #665f60;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.our-service-description{
+	font-family: 'PT Sans';
+	font-size: 18px;
+	color: #665f60;
+	font-weight: 400i;
+}
+
+// header
+
+.padding--top{
+	padding-top: 33px;
+}
+
+.nav-list-item{
+	@extend .font-caption;
+	font-size: 24px;
+
+	a{
+		color: white;
+
+		&:hover{		
+			color: green;
+		}
+	}
+
+}
+
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:focus{
+	background-color: transparent;
+}
+
+
+// first section
+
+.first-section{
+	position: relative;
+	background: url("../../prod/img/firstslide-bg.jpeg") no-repeat center center;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+}
+
+.first-section__description{
+	font-family: 'PT Sans';
+	font-size: 30px;
+	color: white;
+	font-weight: 400i;
+	width: 55%;
+	margin: 0 auto;
+}
+
+.big--font{
+	font-size: 72px;
+}
+
+.padding--top-btm{
+	padding-top: 390px;
+	padding-bottom: 490px;
+}
+
+.second--line{
+	width: 100%;
+}
+
+// slide about-us
+
+.about-us__description{
+	color: #665f60;
+	
+}
+
+.first-line--padding{
+	padding-top: 73px;
+}
+
+.sec-line--padding{
+	padding-top: 22px;
+}
+
+.img--padding{
+	padding: 118px 0 118px;
+}
+
+.btn-padding--top{
+	padding-top: 92px;
+}
+
+.img-wrapper{
+	position: relative;
+}
+
+.img-caption{
+	position: absolute;
+	top: 15%;
+	transform: translateX(50%);
+}
+
+.aboutus--padding{
+	padding-top: 35px;
+}
+
+.font-bold{
+	font-weight: 700;
+}
+
+.learn-more--btn{
+	font-family: 'PT Sans';
+	font-size: 20px;
+	text-transform: capitalize;
+	padding: 17px 45px;
+	color: #848283;
+	border: 1px solid #7d7a7c;
+	border-radius: 0;
+	font-weight: 400i;
+}
+
+// section our-services
+
+.our-serv-img-wrapper{
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+.our-serv-bg-img{
+	position: relative;
+	background: url("../../prod/img/ourservbg.jpeg") no-repeat center center;
+	height: auto;
+
+	.our-service-description{
+		padding-top: 100px;
+		padding-bottom: 355px;
+	}
+}
+
+.serv-description--padding{
+	padding-bottom: 105px;
+}
+
+.bg--grey{
+	background: #dbdbdb;
+}
+
+.bg--notwhite{
+	background: #ebebeb;
+}
+
+.our-serv-bg-img{
+	p{
+		color: white;
+	}
+}
+
+// Recent works
+
+.recent-works{
+	position: relative;
+	background: url("../../prod/img/recentworkbg.jpeg") no-repeat center center;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+
+	.our-serv-img-wrapper{
+		padding-top: 42px;
+	}
+}
+
+.works-padding--bottom{
+	padding-bottom: 60px;
+}
+
+.work-slider_img-wrapper{
+	display: inline-block;
+	margin: 0 auto;
+
+	img{
+		margin: 0 auto;
+	}
+}
+
+.recent-works{
+	.learn-more--btn{
+		margin-bottom: 58px;
+		border: 1px solid white;
+		background: #b6b4d7;
+		color: white;
+
+		&:hover{
+			color: green;
+			background: white;
+		}
+	}
+}
